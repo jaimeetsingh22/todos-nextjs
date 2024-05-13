@@ -52,8 +52,8 @@ export const CheckOrDelete = ({ id, isCompleted }) => {
 
       router.refresh();
     } catch (error) {
-      toast.error(error);
       console.log(error);
+      return toast.error(error);
     }
 
   }
